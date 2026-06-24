@@ -1,5 +1,4 @@
-display_name: Tender Skills
-short_description: Coordinate tender opportunity intake and feasibility decisions
-default_prompt: >-
-  Use this skill to start, assess, or restore a smart-city tender project
-  through a portable .tender project center.
+interface:
+  display_name: "Tender Skills"
+  short_description: "Assess tender feasibility, solution levels, and cost boundaries"
+  default_prompt: "Use $tender-skills to assess a smart-city tender opportunity and record the team decision."

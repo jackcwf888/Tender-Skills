@@ -26,20 +26,20 @@ def main() -> None:
     parser.add_argument("project_root", type=Path, help="Tender project root directory")
     args = parser.parse_args()
 
-    project_root = args.project_root.expanduser().resolve()
-    tender_dir = project_root / ".tender"
+    tender_dir = args.project_root.expanduser().resolve() / ".tender"
     tender_dir.mkdir(parents=True, exist_ok=True)
     (tender_dir / "SESSIONS").mkdir(exist_ok=True)
-    (project_root / "sources").mkdir(parents=True, exist_ok=True)
-    (project_root / "deliverables").mkdir(parents=True, exist_ok=True)
+    (args.project_root / "sources").mkdir(parents=True, exist_ok=True)
+    (args.project_root / "deliverables").mkdir(parents=True, exist_ok=True)
 
     created = []
     for filename, content in FILES.items():
-      path = tender_dir / filename
-      if not path.exists():
-        path.write_text(content, encoding="utf-8")
-        created.append(path.name)
+        path = tender_dir / filename
+        if not path.exists():
+            path.write_text(content, encoding="utf-8")
+            created.append(path.name)
 
+    # Keep terminal output readable in consoles that cannot encode Chinese paths.
     display_path = str(tender_dir).encode("ascii", "backslashreplace").decode("ascii")
     print(f"Project center: {display_path}")
     print("Created: " + (", ".join(created) if created else "none (existing files preserved)"))

@@ -35,6 +35,26 @@ node -e "JSON.parse(require('fs').readFileSync('tender-skills/.codex-plugin/plug
 python -m py_compile tender-skills/skills/tender-skills/scripts/init_tender_project.py
 ```
 
+## Sync Rule
+
+The authoritative editing sources for released skills live in the local Codex skill directory, not in this release folder:
+
+- `C:\Users\jackc\.codex\skills\tender-skills`
+- `C:\Users\jackc\.codex\skills\tender-writing-spec`
+- `C:\Users\jackc\.codex\skills\tender-roadshow-voiceover`
+
+When one of those source skills changes, sync it into this release tree and then mirror the result into the Git working copy under `publish/Tender-Skills-git/`. Use the project helper:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/sync-tender-skills.ps1
+```
+
+For a release that must update GitHub in the same cycle, run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/sync-tender-skills.ps1 -Commit -Push
+```
+
 ## Pull Requests
 
 Summarize changes in distribution terms: marketplace metadata, plugin manifest, skill behavior, or helper script behavior. For workflow changes, include one concrete trigger example such as `开始投标项目`, `Assess a solution level`, or `Generate a roadshow voiceover`.

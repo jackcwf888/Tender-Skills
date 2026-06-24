@@ -98,7 +98,7 @@ async def synthesize_segments(lines: list[str], segment_dir: Path, voice: str, r
                 await communicator.save(str(output))
                 last_error = None
                 break
-            except Exception as exc:
+            except Exception as exc:  # noqa: BLE001
                 last_error = exc
                 await asyncio.sleep(1)
         if last_error is not None:
@@ -236,6 +236,6 @@ def main() -> int:
 if __name__ == "__main__":
     try:
         raise SystemExit(main())
-    except Exception as exc:
+    except Exception as exc:  # noqa: BLE001
         print(f"ERROR: {exc}", file=sys.stderr)
         raise

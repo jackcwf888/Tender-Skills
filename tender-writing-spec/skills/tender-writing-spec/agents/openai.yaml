@@ -1,5 +1,7 @@
-display_name: Tender Writing Spec
-short_description: Tender bid writing and DOCX edit rules
-default_prompt: >-
-  Use this skill to draft or revise bid technical text while preserving
-  document structure and aligning with confirmed procurement scope.
+interface:
+  display_name: "Tender Writing Spec"
+  short_description: "Tender bid writing and DOCX edit rules"
+  default_prompt: "Use $tender-writing-spec to draft or revise bid technical text while preserving document structure and aligning with confirmed procurement scope."
+
+policy:
+  allow_implicit_invocation: true

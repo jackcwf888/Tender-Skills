@@ -3,7 +3,6 @@
 ## Audience
 
 Use this profile for:
-
 - tender demos
 - bid defense videos
 - project capability roadshows
@@ -13,14 +12,12 @@ Use this profile for:
 ## Listening Goal
 
 The listener should hear:
-
 - stable project-presenter confidence
 - clear and complete pronunciation
 - enough pause to follow screen transitions
 - technical seriousness without sounding stiff
 
 The listener should not hear:
-
 - promotional hype
 - radio-ad energy
 - rushed phrases
@@ -51,7 +48,6 @@ The listener should not hear:
 ## Duration Tradeoff
 
 When the user gives a target duration:
-
 - first adjust pauses
 - second apply moderate speaking-rate changes
 - only after that consider stronger acceleration
