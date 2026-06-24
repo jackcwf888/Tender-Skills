@@ -1,0 +1,35 @@
+{
+  "name": "tender-writing-spec",
+  "version": "0.1.0",
+  "description": "Tender bid writing and revision skill for formal technical sections, implementation plans, and scoped proposal text.",
+  "author": {
+    "name": "jackcwf888",
+    "url": "https://github.com/jackcwf888"
+  },
+  "homepage": "https://github.com/jackcwf888/Tender-Skills",
+  "repository": "https://github.com/jackcwf888/Tender-Skills",
+  "keywords": [
+    "tender",
+    "writing",
+    "proposal",
+    "docx"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Tender Writing Spec",
+    "shortDescription": "Draft and revise tender text without breaking scope",
+    "longDescription": "A focused writing plugin for formal tender and proposal documents. It helps an agent draft or revise technical sections, implementation plans, AI capability chapters, procurement explanations, and Word-based bid content while preserving document structure, pricing boundaries, and deployment assumptions.",
+    "developerName": "jackcwf888",
+    "category": "Productivity",
+    "capabilities": [
+      "Write",
+      "Edit"
+    ],
+    "websiteURL": "https://github.com/jackcwf888/Tender-Skills",
+    "defaultPrompt": [
+      "Use Tender Writing Spec to draft one tender section and keep the original structure unchanged.",
+      "Revise this bid chapter so it matches the confirmed procurement scope and deployment boundary.",
+      "Insert an AI capability section into a Word-based tender without changing nearby heading hierarchy."
+    ]
+  }
+}

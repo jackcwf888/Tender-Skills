@@ -1,0 +1,5 @@
+display_name: Tender Roadshow Voiceover
+short_description: Generate expert-ready bid demo narration audio
+default_prompt: >-
+  Use this skill to generate a clear, professional bid roadshow voiceover
+  from an Excel script or narration text.

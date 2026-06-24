@@ -1,0 +1,35 @@
+{
+  "name": "tender-skills",
+  "version": "0.1.0",
+  "description": "Portable smart-city tender assessment skillset for business, technical, cost, and bid-lead collaboration.",
+  "author": {
+    "name": "jackcwf888",
+    "url": "https://github.com/jackcwf888"
+  },
+  "homepage": "https://github.com/jackcwf888/Tender-Skills",
+  "repository": "https://github.com/jackcwf888/Tender-Skills",
+  "keywords": [
+    "tender",
+    "bid",
+    "digital-twin",
+    "smart-city"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Tender Skills",
+    "shortDescription": "Coordinate tender opportunity intake and feasibility decisions",
+    "longDescription": "A portable workflow plugin for smart-city and digital-twin tender teams. It helps business, technical, cost-control, and bid-lead roles collect requirements, evaluate configurable solution levels, preserve project memory, and hand off a durable .tender project center across different AI agents.",
+    "developerName": "jackcwf888",
+    "category": "Productivity",
+    "capabilities": [
+      "Write",
+      "Workflow"
+    ],
+    "websiteURL": "https://github.com/jackcwf888/Tender-Skills",
+    "defaultPrompt": [
+      "Start a new digital-twin tender opportunity and create the .tender project center.",
+      "Assess feasibility and map customer needs to our configurable level model.",
+      "Restore a tender project context and tell me the next smallest action."
+    ]
+  }
+}

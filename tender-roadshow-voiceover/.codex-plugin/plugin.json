@@ -1,0 +1,35 @@
+{
+  "name": "tender-roadshow-voiceover",
+  "version": "0.1.0",
+  "description": "Generate professional Chinese roadshow and tender-demo narration audio from Excel or plain-text scripts.",
+  "author": {
+    "name": "jackcwf888",
+    "url": "https://github.com/jackcwf888"
+  },
+  "homepage": "https://github.com/jackcwf888/Tender-Skills",
+  "repository": "https://github.com/jackcwf888/Tender-Skills",
+  "keywords": [
+    "tender",
+    "voiceover",
+    "roadshow",
+    "audio"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Tender Roadshow Voiceover",
+    "shortDescription": "Generate expert-ready bid demo narration audio",
+    "longDescription": "A focused voiceover plugin for tender demos, bid defense videos, client walkthroughs, and project capability roadshows. It turns Excel-based narration sheets or plain-text scripts into polished Chinese MP3 output with stable delivery, clear diction, and presentation-friendly pauses.",
+    "developerName": "jackcwf888",
+    "category": "Productivity",
+    "capabilities": [
+      "Audio",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/jackcwf888/Tender-Skills",
+    "defaultPrompt": [
+      "Generate a clear professional bid roadshow voiceover from this Excel narration sheet.",
+      "Turn this Chinese narration text into one MP3 with formal tender-demo pacing.",
+      "Create a standard male presenter voiceover for this project walkthrough script."
+    ]
+  }
+}
